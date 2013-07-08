@@ -71,11 +71,9 @@ class PlantUMLProcessor(BaseProcessor):
         self.plantuml_jar_file = 'plantuml-%s.jar' % (self.PLANTUML_VERSION,)
         self.plantuml_jar_path = None
 
-        self.plantuml_jar_path = abspath(
-            join(
-                "~/.plantuml",
-                self.plantuml_jar_file
-            )
+        self.plantuml_jar_path = join(
+            "~/.plantuml",
+            self.plantuml_jar_file
         )
         print("Looking for jar file at: " + self.plantuml_jar_path)
         if not exists(self.plantuml_jar_path):

@@ -73,7 +73,7 @@ class PlantUMLProcessor(BaseProcessor):
 
         self.plantuml_jar_path = abspath(
             join(
-                dirname(__file__),
+                "~/.plantuml",
                 self.plantuml_jar_file
             )
         )

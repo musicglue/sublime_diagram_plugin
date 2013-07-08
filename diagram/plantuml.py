@@ -72,7 +72,7 @@ class PlantUMLProcessor(BaseProcessor):
         self.plantuml_jar_path = None
 
         self.plantuml_jar_path = join(
-            "~/.plantuml",
+            "/opt/plantuml",
             self.plantuml_jar_file
         )
         print("Looking for jar file at: " + self.plantuml_jar_path)

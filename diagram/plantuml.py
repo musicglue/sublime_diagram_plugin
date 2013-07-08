@@ -77,6 +77,7 @@ class PlantUMLProcessor(BaseProcessor):
                 self.plantuml_jar_file
             )
         )
+        print("Looking for jar file at: " + self.plantuml_jar_path)
         if not exists(self.plantuml_jar_path):
             raise Exception("can't find " + self.plantuml_jar_file)
         print("Detected %r" % (self.plantuml_jar_path,))
